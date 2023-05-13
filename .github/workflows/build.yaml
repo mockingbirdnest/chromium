@@ -9,15 +9,9 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-    strategy:
-        matrix:
-          configuration: [Debug, Release]
     steps:
     - name: Checkout source files
       uses: actions/checkout@v3
-
-    - name: Find MSBuild
-      uses: mockingbirdnest/actions/windows/find_msbuild@main
 
     - name: 'Upload artifact'
       uses: actions/upload-artifact@v3
