@@ -13,10 +13,10 @@ jobs:
     - name: Checkout source files
       uses: actions/checkout@v3
 
-    - name: 'Upload artifact'
+    - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
         name: chromium
         path: |
           base/**
-          build /**
+          build/**
